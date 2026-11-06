@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>เมนูทั้งหมด | Little Bloom Cafe</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #FEF4F6;
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+}
+
+h1 {
+    text-align: center;
+    color: #C56B83;
+    font-size: 32px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #986879;
+}
+
+h2 {
+    color: #C56B83;
+    border-bottom: 2px solid #F8DCE4;
+    padding-bottom: 10px;
+    margin-top: 35px;
+}
+
+.back {
+    display: inline-block;
+    background: #EABAC9;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #FFF5F7;
+    padding: 13px;
+    border-radius: 17px;
+    text-align: center;
+    box-shadow: 0 3px 10px #ead6dc;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.card h3 {
+    color: #98586D;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #79515E;
+    line-height: 1.6;
+}
+
+.price {
+    color: #D36B8B !important;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+footer {
+    background: #F8DCE4;
+    text-align: center;
+    padding: 18px;
+    margin-top: 35px;
+    border-radius: 12px;
+    color: #98586D;
+}
+
+@media (max-width: 650px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="index.html" class="back">← กลับหน้าหลัก</a>
+
+<h1>🌸 Little Bloom Cafe & Bistro 🌸</h1>
+<p class="subtitle">เติมความสุขและความหวานในทุกวันของคุณ</p>
+
+<!-- เมนูขนม -->
+<h2>🍰 Dessert Menu | เมนูขนม</h2>
+
+<div class="products">
+
+    <div class="card">
+        <img src="images/บลูเบอร์รี่.jpg" alt="บลูเบอร์รี่ชีสเค้ก">
+        <h3>บลูเบอร์รี่ชีสเค้ก</h3>
+        <p>ชีสเค้กเนื้อนุ่ม หอมชีส ท็อปด้วยซอสบลูเบอร์รี่</p>
+        <p class="price">89 บาท</p>
+    </div>
+
+    <div class="card">
+        <img src="images/สตรอว์เบอร์รี่.jpg" alt="สตรอว์เบอร์รี่ชอร์ตเค้ก">
+        <h3>สตรอว์เบอร์รี่ชอร์ตเค้ก</h3>
+        <p>เค้กเนื้อนุ่ม ครีมสดและสตรอว์เบอร์รี่ฉ่ำ ๆ</p>
+        <p class="price">89 บาท</p>
+    </div>
+
+    <div class="card">
+        <img src="images/บราวนี่.jpg" alt="บราวนี่ช็อกโกแลต">
+        <h3>บราวนี่ช็อกโกแลต</h3>
+        <p>บราวนี่เนื้อหนึบ เข้มข้นด้วยช็อกโกแลต</p>
+        <p class="price">59 บาท</p>
+    </div>
+
+    <div class="card">
+        <img src="images/ครัวซองต์.jpg" alt="ครัวซองต์เนยสด">
+        <h3>ครัวซองต์เนยสด</h3>
+        <p>แป้งกรอบนอก นุ่มใน หอมเนยสด</p>
+        <p class="price">55 บาท</p>
+    </div>
+
+    <div class="card">
+        <img src="images/คัพเค้ก.jpg" alt="คัพเค้กวานิลลา">
+        <h3>คัพเค้กวานิลลา</h3>
+        <p>คัพเค้กเนื้อนุ่ม ตกแต่งด้วยครีมหวานละมุน</p>
+        <p class="price">49 บาท</p>
+    </div>
+
+</div>
+
+<!-- เมนูเครื่องดื่ม -->
+<h2>🥤 Drink Menu | เมนูเครื่องดื่ม</h2>
+
+<div class="products">
+
+    <div class="card">
+        <img src="images/ชานมใต้หวัน.jpg" alt="ชานมไต้หวัน">
+        <h3>ชานมไต้หวัน</h3>
+        <p>ชาหอมเข้มข้น พร้อมไข่มุกบราวน์ชูการ์</p>
+        <p class="price">45 บาท</p>
+    </div>
+
+    <div class="card">
+        <img src="images/มัทฉะ.jpg" alt="มัทฉะลาเต้">
+        <h3>มัทฉะลาเต้</h3>
+        <p>ชาเขียวมัทฉะหอมละมุน ผสมนมสด</p>
+        <p class="price">65 บาท</p>
+    </div>
+
+    <div class="card">
+        <img src="images/นมสดสตรอว์เบอร์รี่.jpg" alt="นมสดสตรอว์เบอร์รี่">
+        <h3>นมสดสตรอว์เบอร์รี่</h3>
+        <p>นมสดหอมหวาน ผสมซอสสตรอว์เบอร์รี่</p>
+        <p class="price">55 บาท</p>
+    </div>
+
+    <div class="card">
+        <img src="images/คาราเมลมัคคิอาโต.jpg" alt="คาราเมลมัคคิอาโต">
+        <h3>คาราเมลมัคคิอาโต</h3>
+        <p>กาแฟหอมเข้ม เติมความหวานด้วยคาราเมล</p>
+        <p class="price">70 บาท</p>
+    </div>
+
+    <div class="card">
+        <img src="images/โกโก้.jpg" alt="โกโก้เย็น">
+        <h3>โกโก้เย็น</h3>
+        <p>โกโก้เข้มข้น หอมมัน อร่อยสดชื่น</p>
+        <p class="price">50 บาท</p>
+    </div>
+
+</div>
+
+<footer>
+🌷 ขอบคุณที่มาใช้บริการ 🌷
+<br>
+Little Bloom Cafe & Bistro
+</footer>
+
+</div>
+
+</body>
+</html>
