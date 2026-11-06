@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Little Bloom Cafe & Bistro</title>
+
+<style>
+body {
+    background-color: #FEF4F6;
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #C56B83;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+h2 {
+    color: #C56B83;
+    margin-top: 25px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.menu img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu img:hover {
+    transform: scale(1.04);
+}
+
+.content {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.content img {
+    width: 220px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.description {
+    color: #79515E;
+    font-size: 18px;
+    line-height: 1.8;
+    flex: 1;
+    min-width: 300px;
+}
+
+footer {
+    text-align: center;
+    background: #F8DCE4;
+    color: #98586D;
+    padding: 18px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+@media (max-width: 650px) {
+    .menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .banner {
+        height: 300px;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>🌸 Little Bloom Cafe & Bistro 🌸</h1>
+
+<img class="banner" src="images/little-bloom-banner.png">
+
+<h2>แนะนำร้าน</h2>
+
+<div class="menu">
+
+<a href="about.html">
+    <img src="images/หน้าหลัก.png" alt="หน้าหลัก">
+</a>
+
+    <a href="menu.html">
+        <img src="images/เมนูทั้งหมด.jpg" alt="เมนูทั้งหมด">
+    </a>
+
+  <a href="promotion.html">
+    <img src="images/โปรโมชั่น.jpg" alt="โปรโมชั่น">
+</a><a href="contact.html">
+    <img src="images/ช่องทางการติดต่อ.jpg" alt="ช่องทางการติดต่อ">
+</a>
+    <a href="review.html">
+    <img src="images/รีวิวจากลูกค้า.jpg" alt="รีวิวจากลูกค้า">
+</a>
+
+</div>
+
+<h2>เมนูยอดนิยม</h2>
+
+<div class="content">
+
+    <img src="images/ชานมใต้หวัน.jpg">
+    <img src="images/บลูเบอร์รี่.jpg">
+
+    <div class="description">
+        <h3>ชานมไต้หวัน & เค้กบลูเบอร์รี่</h3>
+
+        ชาหอมเข้มเต็มรส ชงจากใบชาแท้คัดเกรด
+        หอมเตะจมูก กลมกล่อมลงตัว
+        พร้อมไข่มุกบราวน์ชูการ์หนึบหนับ
+        เคี่ยวสดใหม่ทุกวัน และบลูเบอร์รี่ชีสเค้ก
+        เนื้อเค้กนุ่มละมุน หอมชีสครีม
+        ท็อปด้วยซอสบลูเบอร์รี่รสหวานอมเปรี้ยว 💜
+
+        <br><br>
+        🌷 เติมความหวานให้วันพิเศษของคุณ
+    </div>
+</div>
+
+<footer>
+เว็บไซต์นี้เป็นเว็บไซต์ของ น.ส.กัญญาณัฐ จันลา
+<br>
+Little Bloom Cafe & Bistro 🌸
+</footer>
+
+</div>
+</body>
+</html>
